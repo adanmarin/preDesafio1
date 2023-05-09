@@ -1,0 +1,1250 @@
+@import "var";
+/* Remove default margin -----------------------------------------------------------------------*/
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    overflow: overlay;/*This is used to put the scrollbar transparent*/
+  }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* Inherit fonts for inputs and buttons -----------------------------------------------------*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    // -webkit-user-select: none; 
+    //  -webkit-appearance: button; 
+    //    -moz-user-select: none;
+    //     -ms-user-select: none;
+  }
+/* Make images easier to work with ----------------------------------------------------------*/
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* HERE START THE GENERAL CHANGE IN THE WEB PAGE ----------------------------------------------------------*/
+
+.logo{
+    width: 100px;
+}
+.navigator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px 0px 25px;
+    font-family: $font-raleway;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.44px;
+}
+.btn__nav{
+    display: flex;
+    gap: 30px;
+}
+.general__btn__container{
+    display: flex;
+    gap: 30px;
+}
+.link__nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.contact__link{
+    width: 129px;
+    height: 32px;
+    background-color: $primary-color-black;
+    color: $primary-color-white;
+    border-radius: 8px;
+    font-weight: 700;
+}
+.carrito{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.car__img{
+    width: 21px;
+    height: 22px;
+}
+.notification__car{
+    position: absolute;
+    text-align: center;
+    background-color: $secondary-color-gold;
+    border-radius: 50px;
+    width: 24px;
+    height: 17px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 13px;
+    color: $primary-color-white;
+    top: 0px;
+    right: -20px;
+}
+// START THE MAIN CONTENT --------------------------------------------------------->
+.main__container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.institute__pazioli{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 0px 0px; //desktop sizes
+    position: relative;
+    width: 100%;
+}
+.art__touch{
+    font-family: $font-raleway;
+    font-weight: 500;
+    color: $secondary-color-palid-gray;
+    font-size: 16px;
+    line-height: 18px;
+}
+.general__title{
+    font-family: $font-abril-fatface;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 75px;
+}
+.btns__main{
+    margin: 20px 0px 0px 0px;
+}
+// GENERAL BTNS --- You can applied the base model to you own btns ;) ----------->
+// Then with another class you can edit sizes or padding but the style is applied already
+.black__btns{
+    width: 130px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: $font-poppins;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    background-color: $primary-color-black;
+    color: $primary-color-white;
+}
+.white_btn{
+    width: 130px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: $font-poppins;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    background-color: $primary-color-white;
+    color: $primary-color-black;
+    border: 1px solid $primary-color-black;
+}
+// Start the main img ------->
+.img__piano__main{
+    margin: 30px 0px 0px 0px;
+}
+//Social Icons inside main -------------------------->
+.social__media__main{
+    position: absolute;
+    bottom: 120px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.social__img{
+    width: 32px;
+    height: 32px;
+}
+// NEW MODEL STARS HERE Rodrigo --------------------------------------------------------------->
+
+
+.new__container {
+    background: linear-gradient(
+        0deg, rgba(255,255,255,1) 0%, 
+        rgba(255,255,255,0.711922268907563) 29%, 
+        rgba(0, 0, 0, 0.915) 39%, 
+        rgba(0, 0, 0, 0.455) 61%, 
+        rgba(255,255,255,0.6250875350140056) 76%, 
+        rgba(255,255,255,1) 100%), url('./img/bg_conoce_nuestro_modelo.png'),;
+       background-size: cover;
+ 
+   // display: flex;
+   // flex-direction: column;
+ 
+    
+   .new__container-title {
+     padding-top: 50px;
+     padding-bottom: 150px;
+     font-family: $font-abril-fatface;
+     color: $primary-color-black;
+     font-size: 32px;
+     line-height: 32px;
+     text-align: center;
+     letter-spacing: 0.05em;
+     font-weight: 400;
+   }
+ }
+ 
+ .new__container--new_model {
+   display: flex;
+   justify-content: space-around;
+   .new__container--info {
+     width: 40%;
+     padding: 0px 0px 0px 10px;
+   }
+   .new__container--piano_img {
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: flex-start;
+     position: relative;
+     img {
+       margin-top: -50px;
+     }
+   }
+   .new__container--info {
+     display: flex;
+     flex-direction: column;
+     ;
+     .new__container--ebony {
+       font-family: $font-abril-fatface;
+       font-weight: 400;
+       letter-spacing: 0.05em;
+       font-size: 24px;
+       line-height: 32.38px;
+       padding-bottom: 10px;
+       color: $primary-color-white;
+       text-align: start;
+     }
+     .new__container-stars {
+       display: flex;
+       flex-direction: row;
+       padding-bottom: 10px;
+       left: 32px;
+       
+       .stars__text {
+         color: $primary-color-white;
+         padding-right: 10px;
+         font-family: $font-raleway;
+         display: flex;
+         text-align: center;
+         color: white;
+         
+         
+       }
+       .new__container-stars--img {
+         width: 110px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+       }
+     }
+     .new__container-price {
+       color: $primary-color-white;
+       font-family: $font-abril-fatface;
+       font-weight: 400;
+       letter-spacing: 0.05em;
+       font-size: 24px;
+       padding-bottom: 10px;
+       text-align: start;
+     }
+     .new__container-paragraph {
+       font-family: $font-raleway;
+       font-style: normal;
+       font-weight: 400;
+       font-size: 16px;
+       letter-spacing: 0.05em;
+       color: $primary-color-white;
+       padding-bottom: 10px;
+       text-align: start;
+     }
+     .new__container-properties {
+       width: 55%;
+        display: flex;
+       justify-content: space-between;
+       font-family: $font-raleway;
+       font-style: normal;
+       font-size: 12px;
+       color: $primary-color-white;
+       letter-spacing: 0.05em;
+       font-weight: 400;
+       padding: 0px !important;
+       text-align: start;
+       .acus__cedro{
+        display: flex;
+        gap: 10px;
+        margin: 0px 0px 20px 0px;
+       }
+       .meet__container-internal_properties {
+         list-style-position: outside;
+       }
+       .new__container-out_properties {
+         list-style-position: inside;
+       }
+     }
+   }
+ 
+   .button_1 {
+     background-color: $primary-color-black;
+     color: $primary-color-white;
+     width: 228px;
+     height: 32px;
+     border-radius: 10px;
+     cursor: pointer;
+ 
+     .add__button{
+       font-weight: 700;
+       font-size: 14px;
+       line-height: 16px;
+       letter-spacing: 0.05em;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+   
+   }
+ 
+ }
+ 
+ // NEW MODEL FINISH HERE Rodrigo ------------------------------------------------------------------>
+//Types of pianos MARIN INICIO ------------------------->
+@mixin button ($b_widht,$b_height,$b_padding,$b_border,$b_bg,$b_color,$b_border_radius){
+    text-decoration: none;
+    width: $b_widht;
+    height: $b_height;
+    padding: $b_padding;
+    border: $b_border;
+    background-color: $b_bg;
+    color:$b_color;
+    border-radius: $b_border_radius ;
+  }
+.main__container {
+  .type__container{
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(129,122,122,0.3477766106442577) 50%, rgba(255,255,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .type__container_title{
+    padding-top: 30px;
+    font-family: $font-abril-fatface;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+  }
+  .type__container_pianos{
+    
+    
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    
+    .type__container_pianos_type{
+
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      width: 250px;
+      height: 100%;
+      position: relative;
+      padding: 0px 0px 20px 0px;
+      box-shadow: 0px 0px 10px #9c9c9c;
+      .type__container_pianos_type_img{
+        width: 208px;
+        height: 165.86px;
+        position: absolute;
+        top:-100px;
+        right: 25px;
+      }
+      .type__container_pianos_type_barra{
+        margin-top: 100px;
+        height: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .type__container_pianos_type_barra_content{
+          width: 232px;
+        border: 1px dashed #DBDBDB;
+        size: 1px;
+        }
+      }
+      .type__container_pianos_type_name{
+        padding-top: 15px;
+        padding-left: 10px;
+        text-align: left;
+        font-family: $font-abril-fatface;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: .05em;
+      }
+      .type__container_pianos__type_properties{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 15px;
+        padding-left: 5px;
+        font-family: $font-raleway ;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+      }
+      .type__container_pianos_type_buttons{
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .type__container_pianos_type_buttons_precio{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include button($b_widht:161px,$b_height:36px,$b_padding:0,$b_border: 1px solid black,$b_bg:$primary-color-white,$b_color:$primary-color-black,$b_border_radius:8px);
+          .type__container_pianos_type_buttons_precio_amount{
+              font-weight: bold;
+          }
+        }
+        .type__container_pianos_type_buttons_carrito{
+          margin-top: -5px;
+          background-color: black;
+          border-radius: 8px;
+
+        }
+      }
+    }
+    
+
+  }
+  .type__container_seemore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    .type__container_seemore_content{
+      &:hover{
+        @include button($b_widht:161px,$b_height:36px,$b_padding:0,$b_border: 1px solid black,$b_bg:$hover-color-black,$b_color:$primary-color-white,$b_border_radius:8px);
+      }
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+      @include button($b_widht:161px,$b_height:36px,$b_padding:0,$b_border: 1px solid black,$b_bg:$primary-color-black,$b_color:$primary-color-white,$b_border_radius:8px);
+    }
+  }
+}
+//Types of pianos MARIN TERMINA
+// Start Arthur Tafolla ----------------------------------------------------->
+.section__contacto{
+    /*esto acomoda todos los divs adentro en el centro*/
+    display: flex;
+    /*acomoda en columnas*/
+    flex-direction: column;
+     /*alinea los divs en en centro*/
+    align-items: center;
+  }
+
+  .section__contacto_background{
+         /*para la imagen y sobreponer color blanco encima de la imagen*/
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.987), 
+    rgba(255, 255, 255, 0.716), 
+    rgba(111, 111, 111)100%
+      ),
+    url('./img/background.jpg');
+  background-size: cover;
+  width: 100%;
+  padding: 100px 0px 100px 0px;
+  }
+
+  .section__contactus{
+     /*tamaño de div*/
+     width: 500px;
+  }
+
+  .section_texto{
+     text-align: center;
+     /*tama;o de grosor de letra*/
+     font-weight: 400;
+      /*tamaño de letra*/
+     font-size: 16px;
+  }
+
+  .section__title{
+    /*alina el texto en en centro*/
+    text-align: center;
+    /*tama;o de grosor de letra este es para negrita*/
+    font-weight: 700;
+     /*tamaño de letra*/
+    font-size: 32px;
+  }
+
+  .section__Nombre{
+    /*espacio de separacion arriba*/
+    margin-top: 15px;
+      /*espacio de separacion abajo*/
+    margin-bottom: 20px;
+     /*tamaño de div*/
+    width: 500px;
+  }
+
+  .section__datos {
+     /*espacio de separacion arriba*/
+     margin-top: 15px;
+      /*espacio de separacion abajo*/
+    margin-bottom: 20px;
+    /*propiedad para que floten los divs dentro para los de telefono y mail*/
+    display: flex;
+      /*tamaño de div*/
+     width: 500px;
+  }
+
+  .section__comentarios{
+     /*espacio de separacion arriba*/
+     margin-top: 15px;
+      /*espacio de separacion abajo*/
+    margin-bottom: 20px;
+     /*tamaño de div*/
+    width: 500px;
+  }
+
+  .section__boton{
+     /*tamaño de div*/
+     width: 500px;
+  }
+
+  .form-label{
+    /*acomoda el label arriba del input*/
+    display: block;
+     /*espacio al final*/
+    margin-bottom: 15px;
+     /*letra negrita*/
+    font-weight: 700;
+    /*tamaño de letra*/
+    font-size: 16px;
+  }
+
+  .form-control {
+     /*agrega color negro en rgb y el ultimo valor el degradado*/
+  background-color: rgba(0, 0, 0, 0.6);
+   /*bordes en los inputs con color blanco*/
+  border: 1px solid white;
+   /*ancho de boton es 100 porque el bdiv donde esta dentro tiene un witdh de 500 osea que agarra ese 100%*/
+  width: 100%;
+  /*tamaño de letra*/
+  font-size: 24px;
+   /*bordes de inputs*/
+  border-radius: 5px;
+  }
+
+  .form-areatext{
+    /*agrega color negro en rgb y el ultimo valor el degradado*/
+  background-color: rgba(0, 0, 0, 0.6);
+   /*bordes en los inputs con color blanco*/
+  border: 1px solid white;
+    /*ancho de boton es 100 porque el bdiv donde esta dentro tiene un witdh de 500 osea que agarra ese 100%*/
+  width: 100%;
+   /*altura de area de texto*/
+    height: 250px;
+    /*tamaño de letra*/
+    font-size: 24px;
+    /*bordes de inputs*/
+  border-radius: 5px;
+  }
+
+  .btn{
+     /*agrega color*/
+    background-color: black;
+     /*agrega color al texto*/
+    color: white;
+    /*bordes en los inputs*/
+    border-radius: 5px;
+     /*ancho de boton es 100 porque el bdiv donde esta dentro tiene un witdh de 500 osea que agarra ese 100%*/
+   width: 100%;
+   /*altura de boton*/
+   height: 30px;
+  }
+
+  .input-group {
+    /*estra propiedad permite el div flotar*/
+    display: flex;
+    /*acomoda los divs como columnas de excel una al lado de otra*/
+    flex-direction: column;
+     /*agrega el espacio entre los divs el primero le aplica 10px de espacio*/
+    margin-right: 10px;
+     /*acomoda el tamaño de los divs*/
+    width: 50%;
+  }
+
+  .input-group:last-child {
+     /*el ultimo div no agrega el espacio ala derecha por esto last-child(ultomo elemento)*/
+    margin-right: 0;
+  }
+
+// OUR PARTNERS - Start here ------------------------------------------------>
+
+@mixin bottom__black($border_radius: 80px,  $width__bottom: 328.32px) {
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    height: 103.21px;
+    width: $width__bottom;
+    border-radius: $border_radius;
+  
+    
+  }
+  
+  
+  
+  @mixin partners__letters {
+    font-family: $font-raleway;
+    font-size: 32px;
+    padding-left: 10px;
+    padding-top: 13px;
+    
+  
+    
+  }
+  
+  .main__partners {
+      width: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%,rgba(111, 111, 111, 1) 100%);
+    height: 589px;
+    font-family: $font-raleway;
+    font-size: 32px;
+    
+  
+    .section__paragraph {
+      width: 70%;
+      text-align: center;
+      font-family: $font-abril-fatface;
+      font-size: 32px;
+      font-weight: 400;
+      word-break: normal;
+    }
+  
+    .partners__line1 {
+      
+      height: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 60px;
+  
+      .partner__box1 {
+        @include bottom__black($border_radius: 80px);
+        
+        .partner1 {
+          padding: 8px;
+        }
+  
+        .partners__text__letters {
+          @include partners__letters;
+        }
+      }
+  
+      .partner__box2 {
+        @include bottom__black($border_radius: 80px);
+        
+        
+        
+        .partner2 {
+          background-color: rgb(112, 111, 111);
+          width: 90px;
+          height: 90px;
+          border-radius: 80px;
+          margin-top: 6px;
+          margin-left: 7px;
+          border-width: 1px;
+          border-style: solid;
+          border-color: white;
+  
+          .image_partner2 {
+            display: flex;
+            align-items: center;
+          }
+        }
+  
+        .partners__text__letters {
+          @include partners__letters;
+        }
+      }
+    }
+  
+    .partners__line2 {
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+  
+      .partner__box3 {
+        @include bottom__black(
+          $border_radius: border-radius
+        );
+        width: 328.32px;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        width: 190px;
+        justify-content: space-between;
+  
+        .partner3 {
+          padding: 8px;
+        }
+  
+        .partners__text__letters {
+          margin-top: 12px;
+        }
+      }
+  
+      .partner__box4 {
+        @include bottom__black($border_radius: 80px);
+        justify-content: space-between;
+  
+        .partner4 {
+          padding: 8px;
+        }
+  
+        .partners__text__letters {
+          padding-top: 13px;
+          padding-left: 24px;
+        }
+      }
+  
+      .partner__box5 {
+        @include bottom__black(
+          $border_radius: border-radius
+        );
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        width: 300px;
+        justify-content: space-between;
+  
+        .partner5 {
+          padding: 4px;
+        }
+  
+        .partners__text__letters {
+          margin-top: 13px;
+          margin-left: 70px;
+        }
+      }
+    }
+  
+    .partners__line3 {
+      height: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 60px;
+  
+      .partner__box6 {
+        @include bottom__black($border_radius: 80px);
+  
+        .partner6 {
+          padding: 8px;
+        }
+        .partners__text__letters {
+          @include partners__letters;
+        }
+      }
+  
+      .partner__box7 {
+        @include bottom__black($border_radius: border-radius);
+        border-radius: 88.9758px 14.2361px 14.2361px 88.9758px;
+  
+        .partner7 {
+          padding: 8px;
+        }
+        .partners__text__letters {
+          @include partners__letters;
+        }
+      }
+    }
+  }
+  .noshow{
+    display: none;
+  }
+  // END CONOCE A NUESTROS PARTNERS Nayeli- -
+  
+  // start FOOTER Nayeli- ------------------------
+  
+  footer {
+    height: 500px;
+    background: rgb(111, 111, 111);
+    background: linear-gradient(
+      0deg,
+      rgba(111, 111, 111, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    
+    
+    .footer__box {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 60px;
+      position: relative;
+      
+  
+      .left__footer {
+        width: 140px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        .footer__img__container {
+          width: 200px;
+        }
+      }
+  
+      .social__media__footer {
+          
+        width: 180px;
+        height: 180pxx;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 54px;
+  
+        .icon__social {
+          width: 40px;
+        }
+      }
+  
+      .footer-column__2 {
+  
+        
+        .footer__title--bold {
+          font-family: $font-abril-fatface;
+          font-size: 18px;
+        }
+        .footer__text1 {
+          margin-top: 20px;
+          font-family: $font-raleway;
+          font-size: 16px;
+  
+          .footer__text1--space {
+            margin-top: 9px;
+            font-family: $font-raleway;
+            font-size: 16px;
+          }
+  
+          
+         
+        }
+        
+      }
+  
+  
+      .footer-column_3 {
+        .footer__title--bold {
+          font-family: $font-abril-fatface;
+          font-size: 18px;
+        }
+  
+        .footer__text2 {
+          .footer__paragraph {
+            margin-top: 20px;
+            font-family: $font-raleway;
+            font-size: 16px;
+          }
+        }
+      }
+  
+    }
+    .line__rights {
+      font-family: $font-raleway;
+      font-size: 16px;
+      margin-top: 65px;
+      text-align: center;
+      margin-left: 30px;
+  
+    }
+    .pwby {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-family: $font-raleway;
+      font-size: 12px;
+      padding-top: 80px;
+    }
+  }
+  
+  // start FOOTER - ---------------------------------------------------------->
+
+
+// MEDIA QUERIES ----------------------------------------------------------->
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+@media only screen and (max-width:650px){
+    .general__btn__container{
+        display: none;
+    }
+    .social__media__main{
+        display: none;
+    }
+    .institute__pazioli{
+        margin-top: 80px;
+    }
+    .navigator{
+        margin-top: 40px;
+    }
+    .general__title{
+        font-size: 32px;
+    }
+    // Rodrigo ------------------------------------------------------------>
+    .new__container{
+        // background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+        background-image: none;
+      }
+      
+      .new__container--new_model {
+        
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+      }
+      .new__container--info {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+        width: 100% !important;
+        height: 578px !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .ps{
+        // margin: -100px 0px!important;
+        padding-top: 40px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .new__container-paragraph{
+        width: 90%;
+      }
+      .new__container-paragraph{
+        text-align: center !important;
+      }
+      .new__container--piano_img {
+        background: linear-gradient(
+        0deg, rgba(255,255,255,1) 0%, 
+        rgba(255,255,255,0.711922268907563) 29%, 
+        rgba(0, 0, 0, 0.915) 39%, 
+        rgba(0, 0, 0, 0.455) 61%, 
+        rgba(255,255,255,0.6250875350140056) 76%, 
+        rgba(255,255,255,1) 100%), url('./img/bg_conoce_nuestro_modelo.png'),;
+       background-size: cover;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100%;
+        margin-top: 30px;
+        max-width: 100%;
+        top: 0px;
+      }
+      .shownn{
+        display: none;
+      }
+      .noshow{
+        display: block;
+        padding: 20px 0px 10px 0px !important;
+      }
+    // MARIN start ----------------------------------------------------->
+    .main__container {
+        .type__container{
+          .type__container_title{
+            font-size: 24px;
+            font-weight: 400;
+          }
+          .type__container_pianos{
+            padding-top: 50px;
+            padding-bottom: 20px;
+            height: 1150px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 25px;
+            .type__container_pianos_type{
+              height: 350px;
+              .type__container_pianos_type_img{
+                position: static;
+                padding-top: 10px;
+                padding-left: 20px;
+                width: 205px;
+                height: 183.98px;
+              }
+              .type__container_pianos_type_barra{
+                margin-top: 5px;
+    
+              }
+            }
+          }
+        }}
+    // ARTHUR START ---------------------------------------------------------->
+     /*CONTACTO START*/ 
+     .main__container{
+        .section__contacto_background{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          .section__contacto{
+            width: 100%;
+            .section__contactus{
+              width: 70%;
+              .section__title{
+                font-family: $font-abril-fatface;
+                width: 100%;
+                font-size: 24px;
+                line-height: 32.38px;
+              }
+              .text__section{
+                padding: 30px 0px 10px 0px;
+                font-family: $font-raleway;
+                width: 100%;
+                font-size: 16px; 
+              }
+            }
+          }
+          .section__Nombre{
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            label{
+              width: 100%;
+             display: flex;
+             justify-content:flex-start;
+          }
+            input {
+              width: 288px;
+            }
+          }
+          .section__datos{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .input-group{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              label{
+                  width: 100%;
+                 display: flex;
+                 justify-content:flex-start;
+              }
+              input{
+                width: 288px;
+              }
+    
+            }
+          }
+          .section__comentarios{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            label{
+              width: 100%;
+             display: flex;
+             justify-content:flex-start;
+             p{
+              width: 70%;
+             }
+            }
+            textarea{
+              width: 288px;
+            }
+          }
+        }
+        .section__boton{
+          width: 288px;
+        }
+      }
+     
+        /*CONTACTO ENDS*/ 
+    // ARTHUR END ---------------------------------------------------------->
+    /* KNOW AND FOOTER START HERE ----------------------------------->*/
+    .main__partners{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+
+    }
+    .partners__line1{
+        width: 288px !important;
+       }
+       
+    
+       .partners__line2{
+        width: 288px !important;
+       }
+    
+       .partners__line3{
+        width: 288px !important;
+       }
+      
+        .partner__box2{
+            display: none !important;
+        } 
+        .partner__box3{
+            display: none !important;   
+        } 
+    
+        .partner__box5{
+            display: none !important;  
+        } 
+    
+        .partner__box6{
+          display: none !important;   
+        } 
+    
+        .partner__box1{
+          width: 288px;
+          border-radius: 88.9758px 14.2361px 14.2361px 88.9758px !important;
+        }
+        .partner__box4{
+            width: 288px;
+            border-radius: 14.2361px 88.9758px 88.9758px 14.2361px !important;
+            .partners__text__letters{
+              padding-left: 20px !important;
+            }
+        }
+        .partner__box7{
+            width: 288px;
+        }
+    
+    
+    
+    
+         footer{
+    
+       
+            height: 100%;
+            width: 100%;
+            left: 0px;
+            padding: 0px 0px 100px 0px;
+            
+    
+        
+            .footer__box{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding-top: 60px;
+                text-align: center;
+        
+                .left__footer{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                
+                
+                
+                }
+        
+                .social__media__footer{
+                    margin-bottom: 40px;
+                }
+        
+        
+                .footer-column__2{
+                    padding-top: 150px;
+                }
+        
+                .footer-column_3{
+                    .footer__title--bold{
+                        padding-top: 20px;
+                    }
+        
+                }
+    
+            }
+    
+            .line__rights{
+                padding-top: 40px;
+                text-align: center;
+                font-size: 14px;
+                margin: 0 !important;
+                
+            }
+    
+            .pwby{
+                padding-top: 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        
+    
+        }
+}
+// @media only screen and (min-width: 1440px){
+
+// }
